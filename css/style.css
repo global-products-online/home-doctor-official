@@ -16,12 +16,13 @@ body {
 }
 .title-container h1 {
     color: #FFF900;
+    font-size: 1.5em;
 }
 .text-container {
     text-align: left;
     width: 50%;
     line-height: 1.3;
-    font-size: 20px;
+    font-size: 1.3em;
 }
 .img-container img {
     width: 300px;
@@ -50,6 +51,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .guarantee-text {
     width: 50%;
@@ -57,3 +59,15 @@ body {
 .guarantee-img-container img {
     width: 300px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .text-container, .guarantee-text {
+        width: 90%;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .example {background: green;}
+  }
